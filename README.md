@@ -1,6 +1,6 @@
 # solar-maintenance-system
 Website to register, program and manage the management of solar panels in commercial or residential pv-plants  
-with following technologies:   
+with the following technologies:   
 ✅ Frontend: HTML, CSS, JavaScript (Bootstrap)   
 ✅ Backend: PHP con Apache   
 ✅ Base de datos: MySQL (to store maintenance history and alerts)   
