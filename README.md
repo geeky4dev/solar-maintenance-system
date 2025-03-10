@@ -36,7 +36,7 @@ Features:
 │   ├── header.php            # Navigation bar  
 │   ├── footer.php            # Footer  
 │── 📂controllers
-│   ├── auth.php              # User authentication  
+│   ├── auth.php              # User authentication    
 │   ├── maintenance.php       # Maintenance logic  
 │   ├── incidents.php         # Incident logic  
 │── 📂sql  
