@@ -23,8 +23,8 @@ Features:
 bash
 CopyEdit
 /solar-maintenance-system
-│── /config
-│   ├── database.php          # Database connection
+#│── /config
+#│   ├── database.php          # Database connection
 │── /public
 │   ├── index.php             # Homepage (Login)
 │   ├── dashboard.php         # Main dashboard
