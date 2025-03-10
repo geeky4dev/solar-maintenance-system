@@ -18,7 +18,8 @@ Features:
 ✅ Incident Reporting and Fault Management  
 ✅ Dashboard with Upcoming Maintenance Summary  
 
-📂 Project Structure:  
+📂 Project Structure:
+
 📂 solar-maintenance-system  
 │── 📂config  
 │   ├──database.php          # Database connection.  
