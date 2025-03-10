@@ -35,7 +35,7 @@ Features:
 │── 📂includes  
 │   ├── header.php            # Navigation bar  
 │   ├── footer.php            # Footer  
-│── 📂controllers
+│── 📂controllers  
 │   ├── auth.php              # User authentication    
 │   ├── maintenance.php       # Maintenance logic  
 │   ├── incidents.php         # Incident logic  
