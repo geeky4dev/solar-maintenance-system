@@ -1,23 +1,23 @@
 # solar-maintenance-system
 Website to register, program and manage the management of solar panels in commercial or residential pv-plants
 
-with following technologies: 
-✅ Frontend: HTML, CSS, JavaScript (Bootstrap) 
-✅ Backend: PHP con Apache 
-✅ Base de datos: MySQL (to store maintenance history and alerts) 
+with following technologies:   
+✅ Frontend: HTML, CSS, JavaScript (Bootstrap)   
+✅ Backend: PHP con Apache   
+✅ Base de datos: MySQL (to store maintenance history and alerts)   
 
-Features: 
-•	Registration of clients and photovoltaic installations. 
-•	Maintenance scheduling with email reminders. 
-•	Incident registration and fault reports. 
-•	Dashboard with summary of upcoming maintenance.
+Features:   
+•	Registration of clients and photovoltaic installations.   
+•	Maintenance scheduling with email reminders.   
+•	Incident registration and fault reports.   
+•	Dashboard with summary of upcoming maintenance.  
 
-Project Overview
-Features:
-✅ Client and PV Installation Registration
-✅ Maintenance Scheduling with Email Reminders
-✅ Incident Reporting and Fault Management
-✅ Dashboard with Upcoming Maintenance Summary
+Project Overview  
+Features:  
+✅ Client and PV Installation Registration  
+✅ Maintenance Scheduling with Email Reminders  
+✅ Incident Reporting and Fault Management  
+✅ Dashboard with Upcoming Maintenance Summary  
 
 📂 Project Structure
 bash
