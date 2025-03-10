@@ -22,9 +22,9 @@ Features:
 📂 Project Structure
 bash
 CopyEdit
-/solar-maintenance-system
-#│── /config
-#│   ├── database.php          # Database connection
+/solar-maintenance-system.
+│── /config
+│   ├── database.php          # Database connection.
 │── /public
 │   ├── index.php             # Homepage (Login)
 │   ├── dashboard.php         # Main dashboard
