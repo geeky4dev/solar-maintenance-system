@@ -30,8 +30,8 @@ Features:
 │   ├── incidents.php         # Incident reporting  
 │   ├── send_reminders.php    # Script to send email reminders  
 │── 📂assets  
-│   ├── /css                  # Custom styles  
-│   ├── /js                   # JavaScript scripts  
+│   ├── 📂css                  # Custom styles  
+│   ├── 📂js                   # JavaScript scripts  
 │── 📂includes  
 │   ├── header.php            # Navigation bar  
 │   ├── footer.php            # Footer  
