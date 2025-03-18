@@ -44,5 +44,5 @@ Features:
 │   ├── database.sql          # MySQL database structure  
 └── .htaccess                 # Apache settings  
 
-
+NOTE: send_reminders.php is not working ... 
 
