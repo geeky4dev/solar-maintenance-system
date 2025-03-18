@@ -1,0 +1,43 @@
+<?php
+include '../config/database.php';
+
+// Fetch upcoming maintenance
+$stmt = $pdo->query("SELECT * FROM maintenance WHERE scheduled_date >= CURDATE() ORDER BY scheduled_date");
+$maintenance = $stmt->fetchAll();
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="my-4">Dashboard</h1>
+        <h3>Upcoming Maintenance</h3>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Installation ID</th>
+                    <th>Scheduled Date</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <?php foreach ($maintenance as $item): ?>
+                    <tr>
+                        <td><?= $item['id'] ?></td>
+                        <td><?= $item['installation_id'] ?></td>
+                        <td><?= $item['scheduled_date'] ?></td>
+                        <td><?= $item['status'] ?></td>
+                    </tr>
+                <?php endforeach; ?>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
