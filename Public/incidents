@@ -1,0 +1,39 @@
+<?php
+include '../config/database.php';
+
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    $installation_id = $_POST['installation_id'];
+    $description = $_POST['description'];
+
+    $stmt = $pdo->prepare("INSERT INTO incidents (installation_id, description) VALUES (?, ?)");
+    $stmt->execute([$installation_id, $description]);
+
+    echo "Incident reported successfully!";
+}
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report Incident</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="my-4">Report an Incident</h1>
+        <form action="incidents.php" method="POST">
+            <div class="form-group">
+                <label for="installation_id">Installation ID</label>
+                <input type="number" class="form-control" id="installation_id" name="installation_id" required>
+            </div>
+            <div class="form-group">
+                <label for="description">Incident Description</label>
+                <textarea class="form-control" id="description" name="description" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-danger">Report Incident</button>
+        </form>
+    </div>
+</body>
+</html>
