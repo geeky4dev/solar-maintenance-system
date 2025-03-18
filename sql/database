@@ -1,0 +1,32 @@
+CREATE TABLE clients (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100),
+    email VARCHAR(100) UNIQUE,
+    phone VARCHAR(15),
+    address TEXT
+);
+
+CREATE TABLE installations (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    client_id INT,
+    location TEXT,
+    system_capacity DECIMAL(10,2),
+    FOREIGN KEY (client_id) REFERENCES clients(id) ON DELETE CASCADE
+);
+
+CREATE TABLE maintenance (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    installation_id INT,
+    scheduled_date DATE,
+    status ENUM('Pending', 'Completed') DEFAULT 'Pending',
+    FOREIGN KEY (installation_id) REFERENCES installations(id) ON DELETE CASCADE
+);
+
+CREATE TABLE incidents (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    installation_id INT,
+    description TEXT,
+    reported_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    status ENUM('Open', 'Resolved') DEFAULT 'Open',
+    FOREIGN KEY (installation_id) REFERENCES installations(id) ON DELETE CASCADE
+);
