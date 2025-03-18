@@ -1,5 +1,3 @@
-# Database Connection (config/database.php)
-
 <?php
 // database.php - Database connection
 $host = 'localhost';
