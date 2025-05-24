@@ -100,3 +100,9 @@ Implement Email Reminders using PHPMailer to send automatic reminders before sch
 
 NOTE: send_reminders.php is not working ... 
 
+...
+📜 License
+MIT License.
+
+Created by geeky4dev – feel free to fork, contribute, or star 🌟 the project!
+
